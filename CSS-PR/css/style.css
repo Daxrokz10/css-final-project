@@ -15,6 +15,7 @@ body{
     margin: 0 auto;
 }
 a{
+    color: white;
     text-decoration: none;
 }
 .align-item-center{
@@ -115,7 +116,7 @@ header i{
 .banner-content a{
     background-color: #5758e0;
     color: white;
-    padding: 15px 30px;
+     padding: 15px 30px;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -129,4 +130,59 @@ header i{
 }
 .banner-content a:hover{
     background-image: linear-gradient(-45deg,#5758e0,#5697d8);
+}
+
+/* SERVICES */
+
+.service{
+    padding: 32px;
+    background-color: black;
+}
+.service-item{
+    background-color: #191919;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.2s;
+}
+.service-icon{
+    background-image: linear-gradient(#5758e0,#5697d8);
+    font-size: 45px;
+    color: transparent;
+    background-clip: text;
+}
+.service-item h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.service-item p{
+    color: #999999;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 30px 0px 20px 0px;
+}
+.ri-arrow-right-circle-line{
+    font-size: 40px;
+}
+
+    /* JUGAAADDDDD */
+.get-this-solved::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    top: -20px;
+    left: -20px;
+}
+    /* JUGAAADDDDD */
+
+.service-item:hover{
+    background-image: linear-gradient(90deg,#5758e0,#5697d8);
+    transform: translateY(-20px);
+}    
+.service-item:hover .service-icon,.ri-arrow-right-circle-line{
+    color: white;
+}
+.service-item:hover p{
+    color: white;
 }
