@@ -21,6 +21,9 @@ a{
 .align-item-center{
     align-items: center;
 }
+.justify-around{
+    justify-content: space-around;
+}
 .justify-between{
     justify-content: space-between;
 }
@@ -34,7 +37,7 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
-.p-rel{
+.relative{
     position: relative;
 }
 ul,ol{
@@ -56,6 +59,9 @@ ul,ol{
 /* HEADER */
 header{
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 header .d-flex{
     justify-content: space-between;
@@ -137,12 +143,15 @@ header i{
 .service{
     padding: 32px;
     background-color: black;
+    z-index: 9;
+    position: relative;
 }
 .service-item{
     background-color: #191919;
     padding: 50px;
     margin: 20px;
     transition: 0.2s;
+    
 }
 .service-icon{
     background-image: linear-gradient(#5758e0,#5697d8);
@@ -164,18 +173,26 @@ header i{
     font-size: 40px;
 }
 
-    /* JUGAAADDDDD */
-.get-this-solved::before{
+.service .col-4:first-child a::before{
     content: '';
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     background-image: linear-gradient(#5758e0,#5697d8);
-    top: -20px;
-    left: -20px;
+    top: 30px;
+    left: 40px;
+    z-index: -1;
 }
-    /* JUGAAADDDDD */
-
+.service .col-4:last-child a::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    bottom: 35px;
+    right: 40px;
+    z-index: -1;
+}
 .service-item:hover{
     background-image: linear-gradient(90deg,#5758e0,#5697d8);
     transform: translateY(-20px);
@@ -186,3 +203,146 @@ header i{
 .service-item:hover p{
     color: white;
 }
+
+
+/* ABOUT */
+
+.about{
+    background-color: #191919;
+    padding: 80px 0;
+    
+}
+.about span{
+    background-image: linear-gradient(90deg,#5758e0,#5697d8);
+    height: 5px;
+    width: 50px;
+    display: inline-block;
+}
+.about h2{
+    color: white;
+    font-size: 42px;
+}
+.about p{
+    font-size: 22px;
+    width: 600px;
+    color: #999999;
+}
+.about .about-content{
+    padding-left: 20px;
+}
+
+    /* PROFFESIONALS */
+
+    .proffesional{
+        padding: 80px 0;
+        background-color: #111111;
+    }
+    .proffesional span{
+        background-image: linear-gradient(90deg,#5758e0,#5697d8);
+        height: 5px;
+        width: 50px;
+        display: inline-block;
+    }
+    .proffesional h2{
+        color: white;
+        font-size: 42px;
+    }
+    .proffesional p{
+        font-size: 18px;
+        width: 600px;
+        color: #999999;
+    }
+    .proffesional .proffesional-content li i{
+        background-image: linear-gradient(90deg,#5758e0,#5697d8);
+        color: transparent;
+        font-size: 40px;
+        background-clip: text;
+    } 
+    .proffesional h3{
+        color: white;
+        font-size: 30px;
+    }
+
+    .proffesional .proffesional-content li:not(:first-child){
+        padding-left: 10px;
+    }
+    .proffesional .proffesional-content-p{
+        padding: 30px 0 50px 0;
+    }
+    .proffesional .proffesional-content ul{
+        padding-top: 40px;
+    }
+
+    /* FEATURES */
+
+    .features{
+        padding: 80px 0px;
+    }
+    .features-inner{
+        background-color: #111111;
+    }
+    .features-inner p{
+        display: inline-block;
+    }
+    .features-inner a{
+        padding: 550px;
+        justify-content: space-between;
+    }
+
+
+    /* PORTFOLIO */
+
+.portfolio .col-4 .img-1{
+    background-image: url(../images/portfolio-1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+}
+.portfolio .col-4 .img-2{
+    background-image: url(../images/proffesional-image.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+}
+.portfolio .col-4 .img-3{
+    background-image: url(../images/about-image.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.2s;
+}
+.portfolio .portfolio-img-content{
+    text-align: center;
+    padding-top: 500px;
+}
+.portfolio-image{
+    margin: 20px;
+}
+.portfolio h3{
+    font-size: 28px;
+    padding-bottom: 50px;
+    color: white;
+}
+.portfolio p{
+    font-size: 22px;
+    padding-bottom: 20px;
+    color: white;
+}
+.portfolio .col-4 .img-1:hover{
+    background: linear-gradient(90deg,rgb(87, 88, 224,0.8),rgb(86, 151, 216,0.8)),url(../images/portfolio-1.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-50px);
+}
+.portfolio .col-4 .img-2:hover{
+    background: linear-gradient(90deg,rgb(87, 88, 224,0.8),rgb(86, 151, 216,0.8)),url(../images/proffesional-image.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-50px);
+}
+.portfolio .col-4 .img-3:hover{
+    background: linear-gradient(90deg,rgb(87, 88, 224,0.8),rgb(86, 151, 216,0.8)),url(../images/about-image.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-50px);
+}
+
