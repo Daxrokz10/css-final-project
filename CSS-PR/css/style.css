@@ -233,65 +233,93 @@ header i{
 
     /* PROFFESIONALS */
 
-    .proffesional{
+.proffesional{
         padding: 80px 0;
         background-color: #111111;
     }
-    .proffesional span{
+.proffesional span{
         background-image: linear-gradient(90deg,#5758e0,#5697d8);
         height: 5px;
         width: 50px;
         display: inline-block;
     }
-    .proffesional h2{
+.proffesional h2{
         color: white;
         font-size: 42px;
     }
-    .proffesional p{
+.proffesional p{
         font-size: 18px;
         width: 600px;
         color: #999999;
     }
-    .proffesional .proffesional-content li i{
+.proffesional .proffesional-content li i{
         background-image: linear-gradient(90deg,#5758e0,#5697d8);
         color: transparent;
-        font-size: 40px;
+        font-size: 50px;
         background-clip: text;
     } 
-    .proffesional h3{
+.proffesional h3{
         color: white;
         font-size: 30px;
     }
 
-    .proffesional .proffesional-content li:not(:first-child){
+.proffesional .proffesional-content li:not(:first-child){
         padding-left: 10px;
     }
-    .proffesional .proffesional-content-p{
+.proffesional .proffesional-content-p{
         padding: 30px 0 50px 0;
     }
-    .proffesional .proffesional-content ul{
+.proffesional .proffesional-content ul{
         padding-top: 40px;
     }
+.proffesional .proffesional-content ul li p{
+    padding-top: 10px;
+    font-size: 24px;
+}    
 
     /* FEATURES */
 
     .features{
-        padding: 80px 0px;
+        background-color: black;
+        padding: 30px 0;
     }
     .features-inner{
-        background-color: #111111;
+        background-color: #191919;
+    }
+    .features-inner{
+        padding: 20px;
+        margin-top: 15px;
+    }
+    .feautures-title{
+        padding: 35px;  
+    }
+    .feautures-title h2{
+        margin-bottom: 15px;
+        color: white;
+        font-size: 36px;    
+    }
+    .feautures-title p{
+        color: #999999;
+        font-size: 20px;
     }
     .features-inner p{
-        display: inline-block;
+        color: #999999;
     }
-    .features-inner a{
-        padding: 550px;
-        justify-content: space-between;
+    .features-inner i{
+        font-size: 28px;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(#5758e0,#5697d8);
     }
-
 
     /* PORTFOLIO */
+.portfolio{
+        background-color: #111111;    
+    }
 
+.portfolio h2{
+        color: white;
+    }
 .portfolio .col-4 .img-1{
     background-image: url(../images/portfolio-1.jpg);
     background-size: cover;
@@ -321,11 +349,13 @@ header i{
     font-size: 28px;
     padding-bottom: 50px;
     color: white;
+    opacity: 0;
 }
 .portfolio p{
     font-size: 22px;
     padding-bottom: 20px;
     color: white;
+    opacity: 0;
 }
 .portfolio .col-4 .img-1:hover{
     background: linear-gradient(90deg,rgb(87, 88, 224,0.8),rgb(86, 151, 216,0.8)),url(../images/portfolio-1.jpg);
@@ -345,4 +375,66 @@ header i{
     background-size: cover;
     transform: translateY(-50px);
 }
+.portfolio .col-4 .img-1:hover p, .portfolio .col-4 .img-1:hover h3{
+    opacity: 1;
+}
+.portfolio .col-4 .img-2:hover p, .portfolio .col-4 .img-2:hover h3{
+    opacity: 1;
+}
+.portfolio .col-4 .img-3:hover p, .portfolio .col-4 .img-3:hover h3{
+    opacity: 1;
+}
 
+/* VIDEO */
+
+.video{
+    background-color: #191919;
+    padding: 80px 0;
+}
+.video .video-title h2{
+    color: white;
+    font-size: 50px;
+}
+.video .video-title p{
+    font-size: 20px;
+    color: #999999;
+    padding: 10px 0 30px 0;
+}
+.video .video-inner img{
+    margin-left: 20%;
+    z-index: -1;
+}
+.video .video-inner i{
+    position: absolute;
+    font-size: 200px;
+    transform: translate(-50px,-50px);
+    z-index: 9;
+    top: 30%;
+    left: 48%;
+    color: transparent;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    background-clip: text;
+    transition: 0.2s;
+}
+.video-inner{
+    position: relative;
+}
+.video .video-inner i:hover{
+    scale: 1.3;
+}
+
+/* TESTIMONIAL */
+
+.testimonal{
+    background-color: black;
+    padding: 80px 0;
+}
+.testimonal .testimonial-title h2{
+    color: white;
+    font-size: 50px;
+}
+.testimonal .testimonial-title p{
+    font-size: 20px;
+    color: #999999;
+    padding: 10px 0 30px 0;
+}
