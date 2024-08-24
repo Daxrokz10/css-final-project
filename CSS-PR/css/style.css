@@ -147,7 +147,6 @@ header i{
     padding: 32px;
     background-color: black;
     z-index: 9;
-    position: relative;
 }
 .service-item{
     background-color: #191919;
@@ -224,14 +223,21 @@ header i{
 .about h2{
     color: white;
     font-size: 42px;
+    padding-top: 15px;
 }
 .about p{
-    font-size: 22px;
-    width: 600px;
     color: #999999;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 30px;
+    letter-spacing: 1px;
+    max-width: 500px;
 }
 .about .about-content{
-    padding-left: 20px;
+    padding-left: 100px;
+}
+.about .about-img{
+    padding-left: 100px;
 }
 
     /* PROFFESIONALS */
@@ -443,6 +449,42 @@ header i{
     padding: 10px 0 30px 0;
 }
 
+.testimonial-inner-item h3{
+    color: white;
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+.testimonial-inner-item i{
+    color: transparent;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    background-clip: text;
+    font-size: 30px;
+    transition: 0.2s;
+}
+.testimonial-inner-item{
+    background-color: #111111;
+    margin: 15px;
+    padding: 70px 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.testimonial-inner-item img{
+    border-radius: 50px 50px 50px;
+}
+.testimonial-inner-item p{
+    font-size: 1.2rem;
+    color: #999999;
+    padding: 20px 0 30px 0;
+    transition: 0.2s;
+}
+.testimonial-inner-item:hover{
+    transform: translateY(-10px);
+    background-image: linear-gradient(#5758e0,#5697d8);
+}
+.testimonial-inner-item:hover p, .testimonial-inner-item:hover i{
+    color: white;
+}
+
 /* FORM */
 
 .form{
@@ -499,3 +541,105 @@ header i{
     width: 50px;
     display: inline-block;
 }
+.form-img i{
+    position: absolute;
+    font-size: 120px;
+    transform: translate(-10px,-15px);
+    z-index: 9;
+    bottom: 0;
+    right: 0;
+    color: transparent;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    background-clip: text;
+    transition: 0.2s;
+}
+
+/* CONTACT */
+
+
+.contact{
+    padding: 32px;
+    background-color: #111111;
+    z-index: 9;
+    position: relative;
+}
+.contact-item{
+    background-color: #191919;
+    padding: 50px;
+    margin: 20px;
+    transition: 0.2s;
+    
+}
+.contact-icon{
+    background-image: linear-gradient(#5758e0,#5697d8);
+    font-size: 45px;
+    color: transparent;
+    background-clip: text;
+}
+.contact-item h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact-item p{
+    color: #999999;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 30px 0px 20px 0px;
+}
+.ri-arrow-right-circle-line{
+    font-size: 40px;
+}
+
+.contact .col-4:first-child a::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    top: 30px;
+    left: 40px;
+    z-index: -1;
+}
+.contact .col-4:last-child a::before{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(#5758e0,#5697d8);
+    bottom: 35px;
+    right: 40px;
+    z-index: -1;
+}
+.contact-item:hover{
+    background-image: linear-gradient(90deg,#5758e0,#5697d8);
+    transform: translateY(-20px);
+}    
+.contact-item:hover .contact-icon,.ri-arrow-right-circle-line{
+    color: white;
+}
+.contact-item:hover p{
+    color: white;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #000000;
+    padding: 15px 0;
+    border: 0.1px solid rgb(17, 17, 17);
+    box-shadow: #ffffff;
+}
+.footer a{
+    color: #5697d8;   
+    transition: 0.1s;
+}
+.footer a:hover{
+    color: #7bb6f1;
+}
+.footer p{
+    color: #999999;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+} 
+
