@@ -1,3 +1,15 @@
+/* XXL */
+
+@media(max-width:1920px){
+    .container{
+        max-width: 1890px;
+    }
+    .ri-menu-line{
+        display: none;
+    }
+}
+
+
 /* XL  */
 
 @media(max-width:1399px){
@@ -18,6 +30,27 @@
     .ri-menu-line{
         display: none;
     }
+
+    /* BANNER */
+
+    .banner-content{
+        max-width: 80%;
+    }
+
+    /* SERVICES */
+
+    .col-l-6{
+        width: 50%;
+    }
+
+    /* ABOUT */
+
+    .about .about-content{
+        margin-left: 20%;
+    }
+    .about .about-img{
+        padding-left: 25%;
+    }
 }
 
 /* M  */
@@ -29,11 +62,36 @@
     .ri-menu-line{
         display: none;
     }
+
+    /* BANNER */
+
+    .banner-content{
+        max-width: 95%;
+    }
+    .banner h1{
+        font-size: 80px;
+    }
+
+    /* SERVICES */
+
+    .col-l-6{
+        width: 50%;
+    }
+
+    /* PORTFOLIO */
+    
+    .col-s-6{
+        width: 50%;
+    }
+    .portfolio .img-3{
+        padding: 50%;
+    }
+    
 }
 
 /* S  */
 
-@media(max-width:766px){
+@media(max-width:767px){
     .container{
         max-width: 720px;
     }
@@ -53,6 +111,28 @@
         align-items: flex-start!important;
         flex-direction: column;
     }
+
+    /* SERVICES */
+
+    .col-s-12{
+        width: 100%;
+    }
+
+     /* ABOUT */
+
+     .about .about-content{
+        margin-left: -10%;
+    }
+    .about .about-img{
+        padding-left: -20%;
+    }
+
+    /* PORTFOLIO */
+    
+    .col-s-6{
+        width: 50%;
+    }
+
 }
 
 /* XS  */
@@ -68,7 +148,9 @@
         right: 0;
         background-color: black;
         display: none;
-        
+    }
+    .ri-menu-line{
+        display: block;
     }
     header nav ul{
         align-items: flex-start!important;

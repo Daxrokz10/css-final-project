@@ -125,7 +125,7 @@ header i{
 .banner-content a{
     background-color: #5758e0;
     color: white;
-     padding: 15px 30px;
+    padding: 15px 30px;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -234,7 +234,7 @@ header i{
     max-width: 500px;
 }
 .about .about-content{
-    padding-left: 100px;
+    padding-left: 80px;
 }
 .about .about-img{
     padding-left: 100px;
