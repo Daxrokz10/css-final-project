@@ -46,6 +46,9 @@
         display: none;
         
     }
+    .ri-menu-line{
+        display: block;
+    }
     header nav ul{
         align-items: flex-start!important;
         flex-direction: column;
