@@ -288,6 +288,12 @@ header i{
     padding-top: 10px;
     font-size: 24px;
 }    
+.proffesional-image{
+    padding-left: 30px;
+}
+.proffesional-image img{
+    width: 600px;
+}
 
  /* FEATURES */
 
@@ -440,7 +446,10 @@ header i{
     transition: 0.2s;
 }
 .video-inner{
-    position: relative;
+    padding-left: 100px;
+}
+.video-inner img{
+    width: 600px;
 }
 .video .video-inner i:hover{
     scale: 1.3;
@@ -550,7 +559,10 @@ header i{
     padding-left: 40px;
 }
 .form .form-img{
-    padding-left: 200px;
+    padding-left: 80px;
+}
+.form .form-img img{
+    width: 550px;
 }
 .form span{
     background-image: linear-gradient(90deg,#5758e0,#5697d8);

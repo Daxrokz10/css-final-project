@@ -19,6 +19,12 @@
     .ri-menu-line{
         display: none;
     }
+
+    /* ABOUT */
+
+    .proffesional-image img{
+        width: 500px;
+    }
 }
 
 /* L */
@@ -50,6 +56,54 @@
     }
     .about .about-img{
         padding-left: 10%;
+    }
+
+     /* ABOUT */
+
+    .proffesional-image img{
+        width: 500px;
+    }
+    .proffesional h3{
+        color: white;
+        font-size: 30px;
+    }
+
+    .proffesional .proffesional-content li:not(:first-child){
+        padding-left: 10px;
+    }
+    .proffesional .proffesional-content-p{
+        padding: 30px 0 0px 0;
+    }
+    .proffesional .proffesional-content ul{
+        padding-top: 40px;
+    }
+    .proffesional .proffesional-content ul li p{
+        padding-top: 10px;
+        font-size: 20px;
+    }    
+    .col-m-12{
+        width: 100%;
+    }
+
+    /* VIDEO */
+
+    .video-inner{
+        padding-left: 50px;
+    }
+    .video-inner img{
+        width: 600px;
+    }
+
+    /* FORM */
+
+    .form .form-content{
+        padding-left: 20px;
+    }
+    .form .form-img{
+        padding-left: 60px;
+    }
+    .form .form-img img{
+        width: 450px;
     }
 }
 
@@ -95,9 +149,43 @@
         width: 50%;
     }
     .portfolio .img-3{
-        padding: 50%;
+        justify-content: center;
     }
     
+    /* VIDEO */
+
+    .video-inner{
+        padding-left: 0px;
+    }
+    .video-inner img{
+        width: 600px;
+    }
+
+    /* TESTIMONIALS */
+
+    .col-m-6{
+        width: 50%;
+    }
+
+     /* FORM */
+
+     .form input{
+        background-color: transparent;
+        color: white;
+        height: 55px;
+        width: 400px;
+        border: 2px solid #999999;
+        border-radius: 4px 4px 4px 4px;
+    }
+     .form .form-content{
+        padding-left: 20px;
+    }
+    .form .form-img{
+        padding-left: 0px;
+    }
+    .form .form-img img{
+        width: 400px;
+    }
 }
 
 /* S  */
@@ -147,6 +235,26 @@
         width: 50%;
     }
 
+    /* VIDEO */
+
+     .video-inner{
+        padding-left: 50px;
+    }
+    .video-inner img{
+        width: 600px;
+    }
+    .video .video-inner img{
+        margin-left: 0%;
+    }
+
+    /* FORM */
+
+    .form .form-img{
+        padding-left: 80px;
+    }
+    .form .form-img img{
+        width: 400px;
+    }
 }
 
 /* XS  */
@@ -180,6 +288,20 @@
         margin-left: 10%;
      }
 
+       /* VIDEO */
+
+    .video-inner{
+        padding-left: 80px;
+    }
+    .video-inner img{
+        width: 400px;
+    }
+
+    /* TESTIMONIALS */
+
+    .col-xs-12{
+        width: 100%;
+    }
 }
 
 /* XXS */
