@@ -46,10 +46,10 @@
     /* ABOUT */
 
     .about .about-content{
-        margin-left: 20%;
+        margin-left: 10%;
     }
     .about .about-img{
-        padding-left: 25%;
+        padding-left: 10%;
     }
 }
 
@@ -76,6 +76,17 @@
 
     .col-l-6{
         width: 50%;
+    }
+
+    /* ABOUT */
+    .about .about-content{
+        margin-left: 15%;
+    }
+    .about .about-img{
+        padding-left: 15%;
+    }
+    .col-m-12{
+        width: 100%;
     }
 
     /* PORTFOLIO */
@@ -124,8 +135,11 @@
         margin-left: -10%;
     }
     .about .about-img{
-        padding-left: -20%;
+        padding-left: 0%;
     }
+    .about-img img{
+        width: 500px;
+     }
 
     /* PORTFOLIO */
     
@@ -156,4 +170,20 @@
         align-items: flex-start!important;
         flex-direction: column;
     }
+
+     /* ABOUT */
+
+     .about-img img{
+        width: 450px;
+     }
+     .about-img{
+        margin-left: 10%;
+     }
+
+}
+
+/* XXS */
+
+@media(max-width:412px){
+    
 }
